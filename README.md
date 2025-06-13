@@ -42,5 +42,20 @@ Bu proje M&Y Yazılım Akademi'de gerçekleştirdiğim ikinci projemdir.
 
 ![register](https://github.com/user-attachments/assets/1295affa-6821-4bb2-b1e6-b6c1bc2c1efa)
 
+![login](https://github.com/user-attachments/assets/a1d017fc-4875-46bf-9f5c-e9161c2e616a)
+
+![Gelen kutusu](https://github.com/user-attachments/assets/9d74d79e-901b-4e57-9645-94a70985c63a)
+
+![giden mesajlar](https://github.com/user-attachments/assets/4d2be406-a3c0-48ef-988c-7bf3514f2715)
+
+![mesaj detay](https://github.com/user-attachments/assets/a581c952-35f2-46dc-8161-9923ff614ea9)
+
+![yeni mesaj olustur](https://github.com/user-attachments/assets/8db04036-7e5d-4866-a038-34d6d16acd2b)
+
+![profilim](https://github.com/user-attachments/assets/82a323d4-ab89-4390-bb16-9790f1389b7d)
+
+
+
+
 
 
