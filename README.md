@@ -40,6 +40,6 @@ Bu proje M&Y Yazılım Akademi'de gerçekleştirdiğim ikinci projemdir.
 
 ## 🖼️ Ekran Görüntüleri
 
-![Kayıt Sayfası](screenshots/register.png)
+![Kayıt Sayfası](/screenshots/register.png)
 
 
