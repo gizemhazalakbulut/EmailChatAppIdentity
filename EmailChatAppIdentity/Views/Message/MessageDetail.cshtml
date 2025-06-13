@@ -1,0 +1,30 @@
+﻿@model EmailChatAppIdentity.Entities.Message
+
+@{
+    Layout = "~/Views/Shared/_MessageLayout.cshtml";
+}
+
+
+<br />
+<div class="email-list m-t-15">
+
+    <div class="read-content">
+        <div class="media pt-5">
+            <img class="mr-3 rounded-circle" src="">
+            <div class="media-body">
+                <h5 class="m-b-3">@Model.SenderEmail</h5>
+                <p class="m-b-2">@Model.SendDate.ToShortDateString()</p>
+            </div>
+
+        </div>
+        <hr>
+        <div class="media mb-4 mt-1">
+            <div class="media-body">
+                <h4 class="m-0 text-primary">@Model.Subject</h4><small class="text-muted"></small>
+            </div>
+        </div>
+        <p>@Model.MessageDetail</p>
+     
+    </div>
+
+</div>

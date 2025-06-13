@@ -1,0 +1,55 @@
+﻿@model List<EmailChatAppIdentity.Entities.Message>
+@{
+    Layout = "~/Views/Shared/_MessageLayout.cshtml";
+}
+<h3>Giden Kutusu </h3>
+<br />
+<form method="get" asp-action="SendBox" class="mb-3">
+    <div class="input-group">
+        <input type="text" name="search" class="form-control" placeholder="Konuya göre ara..." value="@ViewBag.SearchTerm" />
+
+        <div class="input-group-append">
+            <button type="submit" class="btn btn-primary">Ara</button>
+        </div>
+    </div>
+</form>
+
+<div class="email-list m-t-15">
+
+    @foreach (var item in Model)
+    {
+        <div class="message">
+            <a href="/Message/MessageDetail/@item.MessageId">
+                <div class="col-mail col-mail-1">
+                    <div class="email-checkbox">
+                        <input type="checkbox" id="chk2">
+                        <label class="toggle" for="chk2"></label>
+                    </div><span class="star-toggle ti-star"></span>
+                </div>
+                <div class="col-mail col-mail-2">
+                    <div class="subject"> <strong>Alıcı: </strong>@item.ReceiverEmail - <strong> Konu: </strong>@item.Subject</div>
+                    <div class="date">@item.SendDate.ToString("dd-MM-yyyy")</div>
+                </div>
+            </a>
+        </div>
+    }
+
+</div>
+
+
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        $(document).ready(function () {
+            var successMessage = "@Html.Raw(TempData["SuccessMessage"])";
+            if (successMessage) {
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Başarılı!',
+                    text: successMessage
+                });
+            }
+        });
+    </script>
+}
+
